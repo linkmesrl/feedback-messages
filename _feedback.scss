@@ -1,4 +1,23 @@
 /* *********************************************
+**** MIXIN
+********************************************** */
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin opacity($opacity) {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity*100)";
+	filter: alpha(opacity=$opacity*100);
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	opacity: $opacity;
+}
+
+
+/* *********************************************
 **** FEEDBACK CSS
 ********************************************** */
 .feedback-box {
