@@ -1,0 +1,179 @@
+/* *********************************************
+**** MIXIN
+********************************************** */
+/* *********************************************
+**** FEEDBACK CSS
+********************************************** */
+.feedback-box {
+  position: relative;
+  height: auto;
+  width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.feedback-box .close {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  right: 8px;
+  font-size: 13px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity*100)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.feedback-box h3 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+.feedback-box p {
+  font-size: 13px;
+  margin-bottom: 4em;
+}
+
+.feedback-box .controller-container {
+  position: absolute;
+  bottom: 1em;
+  z-index: 1;
+}
+
+.feedback-box button {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px 15px;
+  margin-right: 15px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.feedback-box button:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.feedback-banner {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.feedback-banner .close {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  right: 15px;
+  font-size: 13px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity*100)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.feedback-banner h3 {
+  display: none;
+}
+
+.feedback-banner p {
+  font-size: 13px;
+  overflow: hidden;
+  max-height: 20px;
+  line-height: 21px;
+  max-width: 90%;
+}
+
+.feedback-banner .controller-container {
+  display: none;
+}
+
+/* FEEDBACK COLOR */
+.error {
+  background-color: #f2dede;
+}
+
+.error p, .error a, .error h3, .error .close {
+  color: #A03738;
+}
+
+.error button {
+  background-color: #D94652;
+}
+
+.success {
+  background-color: #dff0d8;
+}
+
+.success p, .success a, .success h3, .success .close {
+  color: #168307;
+}
+
+.success button {
+  background-color: #ACCC1A;
+}
+
+.advice {
+  background-color: #fcf8e3;
+}
+
+.advice p, .advice a, .advice h3, .advice .close {
+  color: #D4A84C;
+}
+
+.advice button {
+  background-color: #E4A042;
+}
+
+.info {
+  background-color: #d9edf7;
+}
+
+.info p, .info a, .info h3, .info .close {
+  color: #0C7A72;
+}
+
+.info button {
+  background-color: #00A8BC;
+}
+
+/* FEEDBACK ANIMATION */
+.animate-hide {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity*100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -webkit-transition: .7s ease opacity;
+  transition: .7s ease opacity;
+}
+
+.animate-hide.ng-hide {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity*100)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
