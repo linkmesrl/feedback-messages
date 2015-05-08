@@ -5,16 +5,18 @@ angular.module('feedback-module', [])
 
 	return {
 		restrict: 'E',
+        template: '<div ng-include="contentUrl()"></div>',
 		scope: {
 			title: '@',
 			size: '@',
-			type: '@'
+			type: '@',
+			templateUrl: '@'
+
 		},
 		transclude: true,
-		template: 'ng-include="contentUrl()"',
-
+		
 		link: function(scope, element, attrs) {
-
+			console.log(scope);
 			scope.remove = false;
 			scope.contentUrl = function(){
 				return scope.templateUrl;

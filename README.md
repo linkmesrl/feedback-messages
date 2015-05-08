@@ -22,9 +22,9 @@ Inject into your main module the module:
 * 'feedback-module'
 
 ##Example
-'''
+```
 <feedback></feedback>
-'''
+```
 
     <feedback size="box/banner"></feedback>
 
