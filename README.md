@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Easy feedback messages
 
 Easy angular directive to customize your feedback messages. It is possible to choose different shapes and colors.
