@@ -1,0 +1,176 @@
+/* *********************************************
+**** FEEDBACK CSS
+********************************************** */
+.feedback-box {
+	position: relative;
+	height:auto;
+	width:100%;
+	@include border-radius(4px);
+	padding:1em;
+	margin:1em auto;
+
+	.close {
+		position:absolute;
+		z-index: 1;
+		top:5px;
+		right:8px;
+		font-size:$font-size-normal;
+		@include opacity(0.5);
+	}
+
+	h3 {
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align: left;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		max-width: 95%;
+		overflow: hidden;
+	}
+
+	p {
+		font-size:13px;
+		margin-bottom: 4em;
+	}
+
+	.controller-container {
+		position:absolute;
+		bottom:1em;
+		z-index: 1;
+	}
+
+	button {
+		color:$white-color;
+		text-align: center;
+		font-weight: 700;
+		padding: 5px 15px;
+		margin-right: 15px;
+		border:none;
+		@include border-radius(4px);
+
+		&:active {
+			box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+
+	}
+
+}
+
+.feedback-banner {
+	position: relative;
+	height:50px;
+	width:100%;
+	@include border-radius(6px);
+	padding:1em;
+	margin:1em auto;
+
+	.close {
+		position:absolute;
+		z-index: 1;
+		top:18px;
+		right:15px;
+		font-size:$font-size-normal;
+		@include opacity(0.5);
+	}
+
+	h3 {
+		display: none;
+	}
+
+	p {
+		font-size: $font-size-normal;
+		overflow: hidden;
+		max-height: 20px;
+		line-height: 21px;
+		max-width: 90%;
+	}
+
+	.controller-container {
+		display: none;
+	}
+
+}
+
+
+/* FEEDBACK COLOR */
+.error {
+	background-color:$error-color;
+	
+	p, a, h3, .close {
+		color: #A03738;
+	}
+
+	button {
+		background-color:#D94652;
+	}
+
+}
+
+.success {
+	background-color:$success-color;
+
+	p, a, h3, .close {
+		color: #168307;
+	}
+
+	button {
+		background-color:#ACCC1A;
+	}
+
+}
+
+.advice {
+	background-color:$advice-color;
+
+	p, a, h3, .close {
+		color: #D4A84C;
+	}
+
+	button {
+		background-color:#E4A042;
+	}
+
+}
+
+.info {
+	background-color:$info-color;
+	
+	p, a, h3, .close {
+		color: #0C7A72;
+	}
+
+	button {
+		background-color:#00A8BC;
+	}
+
+}
+
+/* FEEDBACK ANIMATION */
+.animate-hide {
+	@include opacity(1);
+
+	-webkit-transition: .7s ease opacity;
+  	transition: .7s ease opacity;
+}
+
+.animate-hide.ng-hide {
+	@include opacity(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
