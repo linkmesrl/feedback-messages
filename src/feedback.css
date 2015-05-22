@@ -103,7 +103,8 @@
   overflow: hidden;
   max-height: 20px;
   line-height: 21px;
-  max-width: 90%;
+  max-width: 95%;
+  text-align:left;
 }
 
 .feedback-banner .controller-container {
