@@ -19,7 +19,7 @@ angular.module('feedback-module', [])
 			console.log(scope);
 			scope.remove = false;
 			scope.contentUrl = function(){
-				return scope.templateUrl;
+				return scope.templateUrl || 'feedback-messages.html';
 			};
 
 			scope.hide = function(){
